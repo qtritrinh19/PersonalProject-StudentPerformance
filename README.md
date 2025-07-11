@@ -346,9 +346,9 @@ TukeyHSD(aov(math_score ~ gender + grade_group + attendance_group, data = data))
 # Visualization Using Plots
 plot(TukeyHSD(aov(math_score ~ gender + grade_group + attendance_group, data = data)))
 ```
-![Gender](./Rmd_images/2.3(1).)
-![Grade Group](./Rmd_images/2.3(2).)
-![Attendance Group](./Rmd_images/2.3(3).)
+![Gender](./Rmd_images/2.3(1).png)
+![Grade Group](./Rmd_images/2.3(2).png)
+![Attendance Group](./Rmd_images/2.3(3).png)
 
 ```
 Tukey multiple comparisons of means
