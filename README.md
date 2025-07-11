@@ -314,12 +314,12 @@ Model 2: math_score ~ gender * grade_group * attendance_group
 2    669 133717  7    2158.7 1.5429 0.1497
 ```
 
-Hypotheses for Model Comparison
+`Hypotheses for Model Comparison`
 - Null Hypothesis (H₀): The additive model is sufficient; the interaction terms do not explain a significant additional portion of the variance in math scores.
 
 - Alternative Hypothesis (H₁): The interaction terms provide a significant improvement in model fit; at least one interaction effect is non-zero.
 
-Key findings
+`Key findings`
 
 - The interaction model explains slightly more variance (lower RSS = 133,717 vs. 135,876), but the improvement is relatively small.
 
