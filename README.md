@@ -415,7 +415,7 @@ durbinWatsonTest(ins_add)
 
 - The Durbin–Watson statistic is approximately 1.98, suggesting no significant autocorrelation in the residuals.
 
-- The p-value (0.826) is greater than 0.05, indicating no statistical evidence to reject the null hypothesis of independence.
+- The p-value (0.86) is greater than 0.05, indicating no statistical evidence to reject the null hypothesis of independence.
 
 → The assumption of residual independence is satisfied, supporting the validity of the ANOVA model.
 
@@ -429,6 +429,13 @@ shapiro.test(residuals(ins_add))
 ```
 
 ![Q-Q Plot](./Rmd_images/3.2.png)
+
+```
+	Shapiro-Wilk normality test
+
+data:  residuals(ins_add)
+W = 0.96343, p-value = 5.369e-12
+```
 
 `Hypotheses of the Shapiro-Wilk Test`
 
@@ -456,7 +463,7 @@ The residuals from the additive ANOVA model do not satisfy the assumption of nor
 
 → Both the Shapiro–Wilk test and the Q–Q plot reveal that the residuals violate the assumption of normality.
 
-##$ 3.3. Homogeneity of Variance
+### 3.3. Homogeneity of Variance
 
 ```r
 # Levene Test
@@ -466,6 +473,13 @@ print(levene_test)
 ```
 
 ![Scale-Location Plot](./Rmd_images/3.3.png)
+
+```
+Levene's Test for Homogeneity of Variance (center = median)
+       Df F value Pr(>F)
+group  11  0.3925 0.9592
+      669      
+```
 
 `Hypotheses of Levene’s Test`
 
